@@ -5,16 +5,13 @@
     z-index: 9999;
     font-family: 'Jost', sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 20px;
     color: white;
     background: transparent;
     border: 2px solid white;
     border-radius: 100%;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
     transition: all 0.3s ease;
 
     &:hover {
@@ -45,7 +42,7 @@
     position: absolute;
     top: 0%;
     font-family: 'Jost', sans-serif;
-    font-size: 80px;
+    font-size: 5rem;
     margin-bottom: 40px;
     border-bottom: 2px solid white;
     padding-bottom: 10px;
@@ -60,12 +57,12 @@
     text-align: center;
 
     .intro {
-      font-size: 22px;
+      font-size: 1.4rem;
       max-width: 600px;
     }
 
     .email {
-      font-size: 60px;
+      font-size: 3.5rem;
     }
 
     .contact-icons {
@@ -84,13 +81,13 @@
         transition: all 0.3s ease;
 
         i {
-          font-size: 40px;
+          font-size: 2.5rem;
           margin-bottom: 8px;
           transition: all 0.3s ease;
         }
 
         span {
-          font-size: 18px;
+          font-size: 1.5rem;
         }
 
         &:hover {

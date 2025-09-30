@@ -1,30 +1,27 @@
 .back-btn {
-    position: absolute;
-    left: 10%;
-    top: 3%;
-    z-index: 9999;
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 20px;
-    color: white;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 100%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
+  position: absolute;
+  left: 10%;
+  top: 3%;
+  z-index: 9999;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 20px;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    &:hover {
-        background: pink;
-        color: black;
-    }
+  &:hover {
+    background: pink;
+    color: black;
+  }
 
-    &:active {
-        transform: translateY(1px);
-    }
+  &:active {
+    transform: translateY(1px);
+  }
 }
 
 .about-container {
@@ -36,7 +33,8 @@
   background-image: url('/assets/images/cherry_blossom2.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;color: white;
+  background-repeat: no-repeat;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +42,7 @@
 
   .about-title {
     font-family: 'Jost', sans-serif;
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 40px;
     border-bottom: 2px solid white;
@@ -53,65 +51,68 @@
   }
 
   .about-content {
-    max-width: 1400px;
-    width: 100%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
 
     .intro {
-      font-size: 25px;
-      line-height: 1.6;
+      padding: 10px 200px;
+      font-size: 1.5rem;
       text-align: center;
     }
 
     .skills {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 0 200px;
+      margin-top: 40px;
 
-      .skill-category {
-        border-radius: 10px;
-        padding: 20px;
+      .skills-title {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg) translateY(-50%) translateX(50%);
+        font-size: 4rem;
+        margin: 0;
+        border-left: 2px solid white;
+      }
 
-        h2 {
-          font-family: 'Jost', sans-serif;
-          font-weight: 700;
-          font-size: 24px;
-          margin-bottom: 15px;
-          text-transform: uppercase;
-          border-bottom: 1px solid white;
-          padding-bottom: 5px;
-        }
+      .skills-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
 
-        ul {
-          list-style: none;
-          padding-left: 0;
+        .skill-category {
+          border-radius: 10px;
 
-          li {
-            font-size: 20px;
-            line-height: 1.5;
-            padding-left: 10px;
-            position: relative;
+          h2 {
+            font-family: 'Jost', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+          }
 
-            &::before {
-              content: '•';
-              color: #fff;
-              position: absolute;
-              left: 0;
+          ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+              font-size: 1.2rem;
+              line-height: 1.5;
+              padding-left: 10px;
+              position: relative;
+
+              &::before {
+                content: '•';
+                color: #fff;
+                position: absolute;
+                left: 0;
+              }
             }
           }
         }
-      }
-    }
-
-    @media (max-width: 1200px) {
-      .skills {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 700px) {
-      .skills {
-        grid-template-columns: 1fr;
       }
     }
   }

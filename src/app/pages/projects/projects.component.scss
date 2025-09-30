@@ -5,16 +5,13 @@
     z-index: 9999;
     font-family: 'Jost', sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 20px;
     color: white;
     background: transparent;
     border: 2px solid white;
     border-radius: 100%;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
     transition: all 0.3s ease;
 
     &:hover {
@@ -34,7 +31,7 @@
     transform: translateX(-50%);
     z-index: 9999;
     color: white;
-    font-size: 100px;
+    font-size: 6rem;
 }
 
 * {
@@ -58,6 +55,7 @@
         display: flex;
         align-items: center;
         gap: 21px;
+        max-width: 90%;
 
         .slider-img {
             width: 110px;
@@ -81,7 +79,7 @@
 
             h1 {
                 font-family: "Jost", sans-serif;
-                font-size: 29px;
+                font-size: 1.7rem;
                 font-weight: 700;
                 text-align: left;
                 text-transform: uppercase;
@@ -96,8 +94,8 @@
 
             .details{
                 position: absolute;
-                bottom: 43px;
-                left: 43px;
+                bottom: 5%;
+                left: 5%;
             }
         }
     }
@@ -105,7 +103,7 @@
 
 .details h2 {
     font-family: "Jost", sans-serif;
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: left;
     line-height: 44px;
@@ -117,7 +115,7 @@
 }
 .details p {
     font-family: "Jost", sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: left;
     line-height: 33px;
     text-align: left;
@@ -164,9 +162,4 @@ img {
 
 .clickable {
     cursor: pointer;
-    text-decoration: underline;
-
-    &:hover {
-        color: pink !important;
-    }
 }

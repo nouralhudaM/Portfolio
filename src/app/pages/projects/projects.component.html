@@ -8,10 +8,10 @@
       [class.active]="i === activeIndex"
       (click)="setActive(i)"
     >
-      <img [src]="item.img" [alt]="i + 1">
+      <img [src]="item.img" [alt]="i + 1"  [class.clickable]="item.link" (click)="navigateToRepo(item)" [attr.title]="item.link ? 'Click to access gitHub repo' : null">
       <h1>{{ item.title }}</h1>
       <div class="details">
-        <h2 [class.clickable]="item.link" (click)="navigateToRepo(item)" [attr.title]="item.link ? 'Click to access gitHub repo' : null">{{ item.title }}</h2>
+        <h2>{{ item.title }}</h2>
         <p>{{ item.subtitle }}</p>
       </div>
     </div>
