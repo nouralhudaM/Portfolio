@@ -1,0 +1,20 @@
+<button class="back-btn" (click)="goBack()"><i class="fa fa-arrow-left"></i></button>
+<h1 class="projects-title">Projects</h1>
+<section class="slider-container" (wheel)="onWheel($event)">
+  <div class="slider-images">
+    <div 
+      class="slider-img" 
+      *ngFor="let item of sliderItems; let i = index"
+      [class.active]="i === activeIndex"
+      (click)="setActive(i)"
+    >
+      <img [src]="item.img" [alt]="i + 1">
+      <h1>{{ item.title }}</h1>
+      <div class="details">
+        <h2 [class.clickable]="item.link" (click)="navigateToRepo(item)" [attr.title]="item.link ? 'Click to access gitHub repo' : null">{{ item.title }}</h2>
+        <p>{{ item.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<p class="footer">©2025 Nour Alhuda Mofti. All Rights Reserved</p>

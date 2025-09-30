@@ -1,0 +1,115 @@
+.back-btn {
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    z-index: 9999;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: pink;
+        color: black;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+.contact-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Jost', sans-serif;
+
+  .contact-title {
+    position: absolute;
+    top: 0%;
+    font-family: 'Jost', sans-serif;
+    font-size: 80px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+
+    .intro {
+      font-size: 22px;
+      max-width: 600px;
+    }
+
+    .email {
+      font-size: 60px;
+    }
+
+    .contact-icons {
+      position: absolute;
+      display: flex;
+      gap: 50px;
+      top: 80%;
+
+      .contact-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        i {
+          font-size: 40px;
+          margin-bottom: 8px;
+          transition: all 0.3s ease;
+        }
+
+        span {
+          font-size: 18px;
+        }
+
+        &:hover {
+          color: #e8bfc6;
+          i {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: white;
+  font-size: small;
+}
