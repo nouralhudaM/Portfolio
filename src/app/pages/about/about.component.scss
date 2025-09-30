@@ -38,25 +38,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px;
 
   .about-title {
     font-family: 'Jost', sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     border-bottom: 2px solid white;
-    padding-bottom: 10px;
     text-align: center;
   }
 
   .about-content {
-    max-width: 70%;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 70%;
 
     .intro {
-      padding: 10px 200px;
+      padding: 0 20%;
       font-size: 1.5rem;
       text-align: center;
     }
@@ -65,12 +65,12 @@
       display: flex;
       align-items: flex-start;
       gap: 40px;
-      padding: 0 200px;
-      margin-top: 40px;
+      padding: 0 20%;
+      margin-top: 0;
 
       .skills-title {
         writing-mode: vertical-rl;
-        transform: rotate(180deg) translateY(-50%) translateX(50%);
+        transform: rotate(180deg);
         font-size: 4rem;
         margin: 0;
         border-left: 2px solid white;
@@ -91,7 +91,6 @@
             margin-bottom: 15px;
             text-transform: uppercase;
             border-bottom: 1px solid white;
-            padding-bottom: 5px;
           }
 
           ul {
@@ -101,15 +100,7 @@
             li {
               font-size: 1.2rem;
               line-height: 1.5;
-              padding-left: 10px;
               position: relative;
-
-              &::before {
-                content: '•';
-                color: #fff;
-                position: absolute;
-                left: 0;
-              }
             }
           }
         }
